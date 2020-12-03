@@ -3,14 +3,17 @@ import './App.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import React, { Component } from 'react'
-import MovieCard from './components/MovieCard'
+import MovieCard2 from './components/MovieCard2'
 import axios from 'axios'
 
 export default class App extends Component {
-  state = {
-    moviesList: ['tt2294629'],
-    searchTerm: ''
-  };
+  constructor(){
+    super()
+    this.state = {
+      moviesList: ['tt2294629'],
+      searchTerm: '',
+    };
+  }
 
   search = event => {
     event.preventDefault();
@@ -27,6 +30,7 @@ export default class App extends Component {
         }
 
         const moviesList = res.Search.map(movie => movie.imdbID);
+
         this.setState({
           moviesList
         });
@@ -41,7 +45,6 @@ export default class App extends Component {
 
   render() {
     const { moviesList } = this.state;
-
     return (
       <div>
         <form onSubmit={this.search}>
@@ -60,7 +63,7 @@ export default class App extends Component {
         {moviesList.length > 0 ? (
           moviesList.map(movie => (
             <>
-            <MovieCard movieID={movie} key={movie} />
+            <MovieCard2 movieID={movie} key={movie} />
             </>
           ))
         ) : (

@@ -3,7 +3,6 @@
 * {
     box-sizing: border-box;
     background-color: black;
-
 }
 
 body {
@@ -36,8 +35,8 @@ form input {
     font-size: 14px;
     font-family: Lato;
     padding: 10px 15px;
-    height: 40px;
-    min-width: 300px;
+    height: 50px;
+    min-width: 400px;
 }
 
 form button {
@@ -45,7 +44,7 @@ form button {
     background-color:black;
     color: #fff;
     padding: 0 12px;
-    height: 40px;
+    height: 50px;
 }
 
 .movie-card-container {
@@ -57,7 +56,6 @@ form button {
         0 6px 30px 5px rgba(255, 0, 0, 0.185), 0 8px 10px -7px rgba(255, 0, 0, 0.336);
     overflow: hidden;
     display: flex;
-    /* min-height: 420px; */
     margin: 0 auto 50px;
 }
 
@@ -70,7 +68,7 @@ form button {
     background-size: auto ;
     background-repeat: no-repeat;
     background-position: center;
-    width: 100%;
+    width: 90%;
     height: 100%;
 }
 
@@ -151,18 +149,27 @@ footer a {
     text-decoration: none;
 }
 
+.thumbs{
+    color:white;
+    position: relative;
+    align-self: center;
+    padding: 30px 20px 30px 30px;
+}
+
+.thumbs-button{
+    border:0;
+    outline: none;
+    padding: 0 10px;
+}
+
+.thumb-button-info{
+    text-align: center;
+}
 
 
 @media (max-width: 768px) {
     .image-container {
         flex: 5;
-    }
-}
-
-@media (max-width: 700px) {
-    .image-container {
-        -webkit-clip-path: circle(80% at 45px 70px);
-        clip-path: circle(80% at 45px 70px);
     }
 }
 
@@ -186,6 +193,10 @@ footer a {
 
     .movie-info .tags-container,
     .movie-info p {
+        width: 100%;
+    }
+
+    .thumbs-button .thumbs .thumb-button-info{
         width: 100%;
     }
 }
