@@ -59,8 +59,6 @@ export default class MovieCard extends Component {
   }
 
   componentDidMount() {
-
-    // const {Title} = movieData
     axios
       .get(
         `https://www.omdbapi.com/?apikey=f6f37531&i=${this.props.movieID
@@ -72,12 +70,10 @@ export default class MovieCard extends Component {
       });
 
 
-      // const thumbsUp = localStorage.getItem('thumbsUp') === 'true';
 
       const thumbsUp = Number(localStorage.getItem("thumbsUp"))
       const thumbsDown = Number(localStorage.getItem("thumbsDown"))
 
-      // console.log(thumbsUp)
       this.setState({thumbsUp, thumbsDown})
       // console.log(localStorage)
       // const thumbsUpMovie = localStorage.getItem(`${Title}thumbsUp`) === 'true';
@@ -103,7 +99,6 @@ export default class MovieCard extends Component {
       Director
     } = this.state.movieData;
 
-  //  console.log(this.state.movieData)
 
     if (!Poster || Poster === 'N/A') {
       return null;
