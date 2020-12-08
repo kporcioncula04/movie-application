@@ -21,10 +21,6 @@ export default class MovieCard2 extends Component {
 
     this.setState({
       upVote: this.state.upVote + 1,
-      // movieData: {
-      //   ...movieData,
-      //   voteUp: ...this.state.upVote
-      // }
     })
 
     localStorage.setItem(`${Title}up`, this.state.upVote)
@@ -37,10 +33,6 @@ export default class MovieCard2 extends Component {
 
     this.setState({
       downVote: this.state.downVote + 1,
-      // movieData: {
-      //   ...movieData,
-      //   voteUp: ...this.state.upVote
-      // }
     })
 
     localStorage.setItem(`${Title}down`, this.state.downVote)

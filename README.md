@@ -1,17 +1,45 @@
-Welcome to My Movie App
 
-As a user, you will be able to search your favorite movies. 
-As a user, you can also give the movie a thumbs up or thumbs down. 
-As a user, you can see the details of the movie from Title, Director, Release Date, Genre and Plot. 
+<h1 align="center">Welcome to Movie Thumbs 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
+</p>
 
-How to run:
-Clone the app
-Run npm install
-Run npm start
-Visit localhost:3000
+> Welcome to Movie Thumbs. Search any movie and give it a thumbs up or thumbs down. 
 
-Visit the deployed website:
-https://infallible-thompson-1f5af8.netlify.app/
+### 🏠 [Homepage](https://infallible-thompson-1f5af8.netlify.app/)
 
-Utilized OMDB API to obtain movie informations http://www.omdbapi.com/
+### ✨ [Demo](https://infallible-thompson-1f5af8.netlify.app/)
+
+## Install
+
+```sh
+npm install
+```
+
+## Usage
+
+```sh
+npm run start
+```
+
+## Run tests
+
+```sh
+npm run test
+```
+
+## Author
+
+👤 **Karolina Porcioncula**
+
+* Website: https://karolina.life/
+* Github: [@kporcioncula04](https://github.com/kporcioncula04)
+* LinkedIn: [@Karolina Porcioncula](https://linkedin.com/in/Karolina Porcioncula)
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
 
